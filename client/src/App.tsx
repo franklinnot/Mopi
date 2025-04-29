@@ -1,14 +1,16 @@
+import { Routes, Route } from 'react-router';
+import Home from './pages/home';
+import About from './pages/about';
 
-
-function App() {
-
+/**
+ * Main application component that sets up routing.
+ */
+export default function App() {
   return (
-    <>
-      <p className="">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+    </Routes>
+  );
 }
-
-export default App
