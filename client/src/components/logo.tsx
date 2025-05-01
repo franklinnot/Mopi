@@ -13,7 +13,7 @@ export default function Logo({
       <img
         src={logoSrc}
         alt="Mopi Logo's"
-        className='w-full max-w-[10rem] md:max-w-[12rem] lg:max-w-[14rem] 
+        className='w-full max-w-[12rem] md:max-w-[14rem] lg:max-w-[16rem] 
                     drop-shadow-md transition-all duration-300 ease-in-out'
       />
     </a>

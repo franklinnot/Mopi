@@ -1,7 +1,6 @@
-import { Routes, Route } from "react-router";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Layout from "./layouts/layout";
+import { Routes, Route } from 'react-router';
+import Home from './pages/home';
+import About from './pages/about';
 
 /**
  * Main application component that sets up routing.
@@ -9,11 +8,9 @@ import Layout from "./layouts/layout";
 export default function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Route>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
     </Routes>
   );
 }

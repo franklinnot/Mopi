@@ -1,9 +1,18 @@
-import { Outlet } from "react-router-dom";
+import React from "react";
 
-export default function Layout() {
+interface LayoutProps {
+  children?: React.ReactNode;
+  className?: string;
+}
+
+export default function Layout({ children, className }: LayoutProps) {
   return (
-    <div className="min-h-dvh flex flex-col justify-center items-center px-10 pb-14">
-      {<Outlet />}
+    <div
+      className={`min-h-dvh max-w-dvw flex flex-col justify-center items-center px-12  pb-[6rem] ${
+        className || ""
+      }`}
+    >
+      {children}
     </div>
   );
 }
