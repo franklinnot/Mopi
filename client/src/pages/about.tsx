@@ -1,11 +1,12 @@
+import Layout from "../layouts/layout";
 
 /**
  * Represents the about page component.
  */
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <h1>Soy el about</h1>
-    </div>
+    </Layout>
   );
 }
